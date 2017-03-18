@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBike"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_bike"
+        />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgBike"
+        android:text="SH"
+        android:textColor="#f45628"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:text="87-G1 123.45"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtoverDay"
+        android:text="Thời gian đóng tiền tháng vừa rồi"
+        android:layout_below="@+id/txtNumber"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20/05/2017"
+        android:layout_below="@+id/txtoverDay"
+        android:gravity="center"
+        android:id="@+id/txtDay"/>
+
+</RelativeLayout>

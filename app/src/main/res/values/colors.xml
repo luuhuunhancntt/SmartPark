@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a5a5a5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="background">#fff5fe</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="localcolor">#4587e1</color>
+    <color name="listcolor">#66cdaa</color>
+    <color name="bikecolor">#5b995b</color>
+    <color name="profilecolor">#00bfd0</color>
+</resources>

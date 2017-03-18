@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartPark</string>
+    <string name="title_local">Local</string>
+    <string name="title_list">List</string>
+    <string name="title_bike">Bikes</string>
+    <string name="title_profile">Profile</string>
+
+
+</resources>
