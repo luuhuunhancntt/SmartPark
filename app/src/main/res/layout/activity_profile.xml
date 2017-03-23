@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.tulau.smartpark.ListFragment">
 
     <RelativeLayout
@@ -15,17 +16,29 @@
         android:layout_height="495dp"
         tools:context="com.tulau.smartpark.ProfileActivity"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="Log Out"
+            android:textColor="#87edec"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile_image"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:src="@drawable/avata_tu"
-            app:civ_border_color="#FF000000"
+            app:civ_border_color="#e0eedd"
             app:civ_border_width="2dp"/>
 
         <TextView
@@ -49,7 +62,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="10dp"
             android:text="18/05/1995"
-            android:textColor="#000000"
+            android:textColor="#e0eedd"
             android:textSize="20dp"
             />
 
@@ -61,7 +74,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="10dp"
             android:text="tulau@mail.com"
-            android:textColor="#000000"
+            android:textColor="#e0eedd"
 
             android:textSize="20dp"
             />
@@ -74,17 +87,18 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="10dp"
             android:text="20/05/2017"
-            android:textColor="#000000"
+            android:textColor="#e0eedd"
             android:textSize="20dp"
+            android:layout_marginRight="10dp"
             />
 
         <Button
-            android:id="@+id/btnEdit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/btnChangePass"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:text="Edit"/>
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_edit"/>
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

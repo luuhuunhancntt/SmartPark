@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.tulau.smartpark.LoginView">
+
 
     <RelativeLayout
         android:id="@+id/login"
@@ -16,13 +18,14 @@
         tools:layout_editor_absoluteY="8dp">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
             android:id="@+id/imgLogin"
-            android:background="@drawable/ic_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_above="@+id/txtID"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="50dp"/>
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/icon_smartpark"/>
 
         <TextView
             android:id="@+id/tvid"
@@ -30,16 +33,20 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/txtID"
             android:layout_alignBottom="@+id/txtID"
+            android:gravity="center"
             android:text="ID: "
             android:textSize="20dp"
-            android:gravity="center"
             android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/txtID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"/>
+            android:layout_marginLeft="60dp"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:shadowColor="@color/textColor"
+            android:singleLine="true"/>
 
         <TextView
             android:id="@+id/tvpass"
@@ -47,9 +54,9 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/txtPass"
             android:layout_alignBottom="@+id/txtPass"
+            android:gravity="center"
             android:text="Pass: "
             android:textSize="20dp"
-            android:gravity="center"
             android:textStyle="bold"/>
 
         <EditText
@@ -57,16 +64,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtID"
-            android:layout_marginLeft="60dp"/>
+            android:layout_marginLeft="60dp"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:shadowColor="@color/textColor"
+            android:singleLine="true">
+
+        </EditText>
 
         <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_selector"
+            android:text="Log in"/>
+
+        <TextView
+            android:id="@+id/tvResetPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/bntLogin"
-            android:text="Log in"
-            android:layout_below="@id/txtPass"
-            android:layout_marginTop="50dp"/>
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="forgot your password"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
     </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/circular_progress_bar"
+        android:visibility="gone">
+    </ProgressBar>
 
 
 </android.support.constraint.ConstraintLayout>

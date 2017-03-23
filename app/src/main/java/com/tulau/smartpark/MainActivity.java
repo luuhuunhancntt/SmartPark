@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 //        gotoTab(fmLocal);
 
     }
+    @Override
+    public void onBackPressed() {
+    }
 
     private void gotoTab(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
